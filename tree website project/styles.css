@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #1b1b1b;
 }
 /* Link Styles */
 
@@ -67,15 +67,15 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid rgb(0, 0, 0);
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #222;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
@@ -85,18 +85,36 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+
+.l-card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
   border-bottom: 4px solid #ccc;
-  border:solid grey 3px;
+  border: 3px solid rgb(0, 0, 0);
   border-radius:30px;
+  color: white;
+  background: rgb(51, 49, 49);
 }
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  border-bottom: 4px solid #ccc;
+  border:3px solid rgb(0, 0, 0);
+  border-radius:30px;
+  color: white;
+  background: rgb(51, 49, 49);
+}
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #0399ff;
+}
+.l-card:hover {
+  border-color: #0399ff;
 }
 
 ul.skills {
@@ -127,6 +145,7 @@ footer .copyright {
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
+  color: white;
 }
 
 footer ul {
@@ -207,6 +226,6 @@ a.social:hover {
 
 .card-title{
 text-align:center;
-  border:solid grey 3px;
+  border:solid #222 3px;
   border-radius:30px;
 }
