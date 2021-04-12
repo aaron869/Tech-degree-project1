@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+.card-title,
+header,
+footer,
+.two-b {
+  text-align: center;
+}
+.name {
+  display: none;
+}
+.link {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #222222;
+}
+/* nav */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 18px 5vw 18px;
+  margin: auto;
+  background: black;
+  position: fixed;
+  width: 90%;
+}
+nav,
+a {
+  color: #0499ff;
+}
+/* header */
+header {
+  background-image: url(../images/profile-backround.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.profile-image {
+  border: solid black;
+  border-radius: 50%;
+  width: 130px;
+  max-width: fit-content;
+  margin: 12vh auto 0;
+}
+
+.tag {
+  background-color: #222222;
+  border-radius: 5px;
+  padding: 10px;
+}
+.header-name {
+  width: auto;
+  max-width: fit-content;
+  margin: 2vh auto 1vh;
+  align-self: center;
+}
+.location {
+  width: 80vw;
+  max-width: fit-content;
+  margin: 0.1vh auto 5vh;
+  color: yellow;
+}
+/* main */
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: #333131;
+  border: solid black;
+  border-radius: 25px;
+  width: 60vw;
+  max-width: 375px;
+  margin: 3vh auto;
+  padding: 20px;
+}
+.card-title {
+  border: #222 solid;
+  border-radius: 50px;
+  width: 170px;
+  margin: auto;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 2px;
+  justify-content: center;
+}
+.skills li {
+  padding: 1px;
+  margin: 2px 5px;
+  width: 85px;
+  border-radius: 5px;
+}
+.blue {
+  background-color: #0499ff;
+}
+.orange {
+  background-color: orange;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem auto 3.75rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+footer li {
+  margin: 0px 0.25rem;
+}
+footer p {
+  margin: 0.3125rem 0;
+  font-size: small;
+}
+.social {
+  width: 100%;
+  max-width: 30px;
+}
+/* media */
+@media screen and (min-width: 719px) {
+  .flex {
+    flex-direction: row;
+    align-content: space-around;
+  }
+  .name {
+    display: block;
+  }
+  .card {
+    max-width: 400px;
+  }
+  .one-b {
+    margin: 7vh 6vw 5vh auto;
+  }
+  .two-b {
+    margin: 7vh auto 5vh 6vw;
+  }
+  .nav {
+    justify-content: unset;
+  }
+  .name {
+    margin-right: auto;
+  }
+  .head-li {
+    padding: 0 1vw;
+  }
+  footer {
+    margin: auto auto 5vh;
+  }
+}
